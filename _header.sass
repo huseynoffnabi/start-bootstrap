@@ -1,0 +1,68 @@
+header
+    padding: 20px 0
+    background-color: #212529
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 1
+    .menu
+        a
+            .imgbox
+                width: 170px
+                img
+                    &:hover
+                        cursor: pointer
+        nav
+            a
+                margin: 20px
+                color: #f4f4f4
+                font-size: 20px
+                &:hover
+                    color: #F1C634
+                    cursor: pointer
+                    transition: 0.5s
+            .hamburgerMenuBox
+                display: none
+
+@media screen and ( max-width: 992px )
+    header
+        padding-top: 30px
+        padding-bottom: 47px
+        .menu
+            a
+                .imgbox
+                    width: 140px
+                    position: absolute
+                    left: 15px
+            nav
+                display: flex
+                flex-direction: column
+                position: absolute
+                background-color: #212529
+                width: 100%
+                left: 0
+                top: 60px
+                a
+                    display: none
+                .hamburgerMenuBox
+                    border: 1px solid #424242
+                    border-radius: 5px
+                    padding: 12px 15px
+                    display: flex
+                    align-items: center
+                    color: #fff
+                    position: fixed
+                    right: 3px
+                    top: 20px
+                    color: #969597
+                    font-size: 20px
+                    margin: 0 10px 
+                    &:hover
+                        cursor: pointer
+                    h5
+                        font-size: 13px
+                        margin-right: 10px
+                        font-weight: 700
+                        color: #9A9C9E
+                    i
+                        font-size: 13px
